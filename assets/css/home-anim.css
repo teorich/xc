@@ -1,0 +1,3329 @@
+body {
+    overflow: auto;
+    transition: background-position 1.5s
+}
+
+body.scroll-override section {
+    position: absolute;
+    overflow: auto;
+    max-height: 100vh;
+    /* height: 200px; */
+    scroll-behavior: smooth;
+    
+    
+}
+
+
+#body-wrap {
+    display: block;
+}
+
+body[show-frame="1"] nav {
+    opacity: 0;
+    visibility: visible
+    
+    
+}
+
+body nav {
+    opacity: 1;
+    visibility: visible
+}
+
+section, section .flyaway, section .flyaway-double-travel, section .semi-fly {
+    transition: all 1s cubic-bezier(.15, 0, 0, 1);
+    
+}
+
+section.asteroids, section .flyaway-double-travel.asteroids, section .flyaway.asteroids,
+section .semi-fly.asteroids {
+    transition: all 1.5s;
+    
+
+}
+
+.launching-space-writing, .test-subject-space-writing {
+    display: block
+}
+
+.side-slide {
+    overflow: hidden
+}
+
+.pad50-left {
+    padding-left: 50px;
+    margin-left: -50px;
+    
+}
+
+.pad50-left .eyebrow, .pad50-left p.copy, .pad50-left ul {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+section .last-section .focus-text:after {
+    width: 0;
+    transition: width 1.2s ease-out
+}
+
+body[show-frame="6"] section .last-section .focus-text:after {
+    width: 100%;
+    transition-delay: 1.5s
+}
+
+body[show-frame="1"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible
+}
+
+body[show-frame="1"] section[iteration="1"] .flyaway, body[show-frame="1"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="1"] section[iteration="1"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="1"] section[iteration="1"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="1"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="1"] .side-slide div, body[show-frame="1"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="1"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="1"] section[iteration="1"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="1"] section[iteration="1"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="1"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="1"] section[iteration="1"] .planet-1, body[show-frame="1"] section[iteration="1"] .planet-2a,
+body[show-frame="1"] section[iteration="1"] .planet-2b, body[show-frame="1"] section[iteration="1"] .planet-3a,
+body[show-frame="1"] section[iteration="1"] .planet-3b, body[show-frame="1"] section[iteration="1"] .planet-4a,
+body[show-frame="1"] section[iteration="1"] .planet-4b, body[show-frame="1"] section[iteration="1"] .planet-5a,
+body[show-frame="1"] section[iteration="1"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+body[show-frame="2"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="2"] section[iteration="1"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="2"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="2"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="1"] .pad50-left p.copy, body[show-frame="2"] section[iteration="1"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="2"] section[iteration="1"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="2"] section[iteration="1"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="2"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="1"] .pad50-left p.copy, body[show-frame="2"] section[iteration="1"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="1"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="1"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="2"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="1"] .side-slide div, body[show-frame="2"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="1"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-2a, body[show-frame="2"] section[iteration="1"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-3b, body[show-frame="2"] section[iteration="1"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="1"] .planet-1, body[show-frame="2"] section[iteration="1"] .planet-2a,
+body[show-frame="2"] section[iteration="1"] .planet-2b, body[show-frame="2"] section[iteration="1"] .planet-3a,
+body[show-frame="2"] section[iteration="1"] .planet-3b, body[show-frame="2"] section[iteration="1"] .planet-4a,
+body[show-frame="2"] section[iteration="1"] .planet-4b, body[show-frame="2"] section[iteration="1"] .planet-5a,
+body[show-frame="2"] section[iteration="1"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="3"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="3"] section[iteration="1"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="3"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="3"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="1"] .pad50-left p.copy, body[show-frame="3"] section[iteration="1"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="3"] section[iteration="1"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="3"] section[iteration="1"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="3"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="1"] .pad50-left p.copy, body[show-frame="3"] section[iteration="1"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="1"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="1"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="3"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="1"] .side-slide div, body[show-frame="3"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="1"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-2a, body[show-frame="3"] section[iteration="1"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-3b, body[show-frame="3"] section[iteration="1"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="1"] .planet-1, body[show-frame="3"] section[iteration="1"] .planet-2a,
+body[show-frame="3"] section[iteration="1"] .planet-2b, body[show-frame="3"] section[iteration="1"] .planet-3a,
+body[show-frame="3"] section[iteration="1"] .planet-3b, body[show-frame="3"] section[iteration="1"] .planet-4a,
+body[show-frame="3"] section[iteration="1"] .planet-4b, body[show-frame="3"] section[iteration="1"] .planet-5a,
+body[show-frame="3"] section[iteration="1"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="4"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="4"] section[iteration="1"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="4"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="4"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="1"] .pad50-left p.copy, body[show-frame="4"] section[iteration="1"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="4"] section[iteration="1"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="4"] section[iteration="1"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="4"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="1"] .pad50-left p.copy, body[show-frame="4"] section[iteration="1"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="1"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="1"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="4"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="1"] .side-slide div, body[show-frame="4"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="1"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-2a, body[show-frame="4"] section[iteration="1"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-3b, body[show-frame="4"] section[iteration="1"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="1"] .planet-1, body[show-frame="4"] section[iteration="1"] .planet-2a,
+body[show-frame="4"] section[iteration="1"] .planet-2b, body[show-frame="4"] section[iteration="1"] .planet-3a,
+body[show-frame="4"] section[iteration="1"] .planet-3b, body[show-frame="4"] section[iteration="1"] .planet-4a,
+body[show-frame="4"] section[iteration="1"] .planet-4b, body[show-frame="4"] section[iteration="1"] .planet-5a,
+body[show-frame="4"] section[iteration="1"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="5"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="5"] section[iteration="1"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="5"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="5"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="1"] .pad50-left p.copy, body[show-frame="5"] section[iteration="1"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="5"] section[iteration="1"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="5"] section[iteration="1"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="5"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="1"] .pad50-left p.copy, body[show-frame="5"] section[iteration="1"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="1"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="1"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="5"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="1"] .side-slide div, body[show-frame="5"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="1"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-2a, body[show-frame="5"] section[iteration="1"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-3b, body[show-frame="5"] section[iteration="1"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="1"] .planet-1, body[show-frame="5"] section[iteration="1"] .planet-2a,
+body[show-frame="5"] section[iteration="1"] .planet-2b, body[show-frame="5"] section[iteration="1"] .planet-3a,
+body[show-frame="5"] section[iteration="1"] .planet-3b, body[show-frame="5"] section[iteration="1"] .planet-4a,
+body[show-frame="5"] section[iteration="1"] .planet-4b, body[show-frame="5"] section[iteration="1"] .planet-5a,
+body[show-frame="5"] section[iteration="1"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="6"] section[iteration="1"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="6"] section[iteration="1"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="6"] section[iteration="1"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="6"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="1"] .pad50-left p.copy, body[show-frame="6"] section[iteration="1"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="6"] section[iteration="1"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="6"] section[iteration="1"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="6"] section[iteration="1"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="1"] .pad50-left p.copy, body[show-frame="6"] section[iteration="1"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="1"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="1"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="6"] section[iteration="1"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="1"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="1"] .side-slide div, body[show-frame="6"] section[iteration="1"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="1"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-2a, body[show-frame="6"] section[iteration="1"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-3b, body[show-frame="6"] section[iteration="1"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="1"] .planet-1, body[show-frame="6"] section[iteration="1"] .planet-2a,
+body[show-frame="6"] section[iteration="1"] .planet-2b, body[show-frame="6"] section[iteration="1"] .planet-3a,
+body[show-frame="6"] section[iteration="1"] .planet-3b, body[show-frame="6"] section[iteration="1"] .planet-4a,
+body[show-frame="6"] section[iteration="1"] .planet-4b, body[show-frame="6"] section[iteration="1"] .planet-5a,
+body[show-frame="6"] section[iteration="1"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="1"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="1"] section[iteration="2"] .flyaway, body[show-frame="1"] section[iteration="2"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="1"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="1"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="2"] .pad50-left p.copy, body[show-frame="1"] section[iteration="2"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="1"] section[iteration="2"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="1"] section[iteration="2"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="1"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="2"] .pad50-left p.copy, body[show-frame="1"] section[iteration="2"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="1"] section[iteration="2"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="2"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="1"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="2"] .side-slide div, body[show-frame="1"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="2"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="2"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="1"] section[iteration="2"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="2"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-2a, body[show-frame="1"] section[iteration="2"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-3b, body[show-frame="1"] section[iteration="2"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="2"] .planet-1, body[show-frame="1"] section[iteration="2"] .planet-2a,
+body[show-frame="1"] section[iteration="2"] .planet-2b, body[show-frame="1"] section[iteration="2"] .planet-3a,
+body[show-frame="1"] section[iteration="2"] .planet-3b, body[show-frame="1"] section[iteration="2"] .planet-4a,
+body[show-frame="1"] section[iteration="2"] .planet-4b, body[show-frame="1"] section[iteration="2"] .planet-5a,
+body[show-frame="1"] section[iteration="2"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="2"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    
+
+}
+
+body[show-frame="2"] section[iteration="2"] .flyaway, body[show-frame="2"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="2"] section[iteration="2"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="2"] section[iteration="2"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="2"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="2"] .side-slide div, body[show-frame="2"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="2"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="2"] section[iteration="2"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="2"] section[iteration="2"] .last-section .input-sub-message,
+body[show-frame="2"] section[iteration="2"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="2"] section[iteration="2"] .planet-1, body[show-frame="2"] section[iteration="2"] .planet-2a,
+body[show-frame="2"] section[iteration="2"] .planet-2b, body[show-frame="2"] section[iteration="2"] .planet-3a,
+body[show-frame="2"] section[iteration="2"] .planet-3b, body[show-frame="2"] section[iteration="2"] .planet-4a,
+body[show-frame="2"] section[iteration="2"] .planet-4b, body[show-frame="2"] section[iteration="2"] .planet-5a,
+body[show-frame="2"] section[iteration="2"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+body[show-frame="3"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="3"] section[iteration="2"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="3"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="3"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="2"] .pad50-left p.copy, body[show-frame="3"] section[iteration="2"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="3"] section[iteration="2"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="3"] section[iteration="2"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="3"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="2"] .pad50-left p.copy, body[show-frame="3"] section[iteration="2"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="2"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="2"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="3"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="2"] .side-slide div, body[show-frame="3"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="2"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-2a, body[show-frame="3"] section[iteration="2"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-3b, body[show-frame="3"] section[iteration="2"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="2"] .planet-1, body[show-frame="3"] section[iteration="2"] .planet-2a,
+body[show-frame="3"] section[iteration="2"] .planet-2b, body[show-frame="3"] section[iteration="2"] .planet-3a,
+body[show-frame="3"] section[iteration="2"] .planet-3b, body[show-frame="3"] section[iteration="2"] .planet-4a,
+body[show-frame="3"] section[iteration="2"] .planet-4b, body[show-frame="3"] section[iteration="2"] .planet-5a,
+body[show-frame="3"] section[iteration="2"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="4"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="4"] section[iteration="2"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="4"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="4"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="2"] .pad50-left p.copy, body[show-frame="4"] section[iteration="2"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="4"] section[iteration="2"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="4"] section[iteration="2"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="4"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="2"] .pad50-left p.copy, body[show-frame="4"] section[iteration="2"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="2"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="2"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="4"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="2"] .side-slide div, body[show-frame="4"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="2"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-2a, body[show-frame="4"] section[iteration="2"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-3b, body[show-frame="4"] section[iteration="2"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="2"] .planet-1, body[show-frame="4"] section[iteration="2"] .planet-2a,
+body[show-frame="4"] section[iteration="2"] .planet-2b, body[show-frame="4"] section[iteration="2"] .planet-3a,
+body[show-frame="4"] section[iteration="2"] .planet-3b, body[show-frame="4"] section[iteration="2"] .planet-4a,
+body[show-frame="4"] section[iteration="2"] .planet-4b, body[show-frame="4"] section[iteration="2"] .planet-5a,
+body[show-frame="4"] section[iteration="2"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="5"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="5"] section[iteration="2"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="5"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="5"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="2"] .pad50-left p.copy, body[show-frame="5"] section[iteration="2"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="5"] section[iteration="2"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="5"] section[iteration="2"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="5"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="2"] .pad50-left p.copy, body[show-frame="5"] section[iteration="2"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="2"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="2"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="5"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="2"] .side-slide div, body[show-frame="5"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="2"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-2a, body[show-frame="5"] section[iteration="2"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-3b, body[show-frame="5"] section[iteration="2"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="2"] .planet-1, body[show-frame="5"] section[iteration="2"] .planet-2a,
+body[show-frame="5"] section[iteration="2"] .planet-2b, body[show-frame="5"] section[iteration="2"] .planet-3a,
+body[show-frame="5"] section[iteration="2"] .planet-3b, body[show-frame="5"] section[iteration="2"] .planet-4a,
+body[show-frame="5"] section[iteration="2"] .planet-4b, body[show-frame="5"] section[iteration="2"] .planet-5a,
+body[show-frame="5"] section[iteration="2"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="6"] section[iteration="2"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="6"] section[iteration="2"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="6"] section[iteration="2"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="6"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="2"] .pad50-left p.copy, body[show-frame="6"] section[iteration="2"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="6"] section[iteration="2"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="6"] section[iteration="2"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="6"] section[iteration="2"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="2"] .pad50-left p.copy, body[show-frame="6"] section[iteration="2"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="2"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="2"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="6"] section[iteration="2"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="2"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="2"] .side-slide div, body[show-frame="6"] section[iteration="2"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="2"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-2a, body[show-frame="6"] section[iteration="2"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-3b, body[show-frame="6"] section[iteration="2"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="2"] .planet-1, body[show-frame="6"] section[iteration="2"] .planet-2a,
+body[show-frame="6"] section[iteration="2"] .planet-2b, body[show-frame="6"] section[iteration="2"] .planet-3a,
+body[show-frame="6"] section[iteration="2"] .planet-3b, body[show-frame="6"] section[iteration="2"] .planet-4a,
+body[show-frame="6"] section[iteration="2"] .planet-4b, body[show-frame="6"] section[iteration="2"] .planet-5a,
+body[show-frame="6"] section[iteration="2"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="1"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="1"] section[iteration="3"] .flyaway, body[show-frame="1"] section[iteration="3"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="1"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="1"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="3"] .pad50-left p.copy, body[show-frame="1"] section[iteration="3"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="1"] section[iteration="3"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="1"] section[iteration="3"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="1"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="3"] .pad50-left p.copy, body[show-frame="1"] section[iteration="3"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="1"] section[iteration="3"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="3"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="1"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="3"] .side-slide div, body[show-frame="1"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="3"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="3"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="1"] section[iteration="3"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="3"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-2a, body[show-frame="1"] section[iteration="3"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-3b, body[show-frame="1"] section[iteration="3"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="3"] .planet-1, body[show-frame="1"] section[iteration="3"] .planet-2a,
+body[show-frame="1"] section[iteration="3"] .planet-2b, body[show-frame="1"] section[iteration="3"] .planet-3a,
+body[show-frame="1"] section[iteration="3"] .planet-3b, body[show-frame="1"] section[iteration="3"] .planet-4a,
+body[show-frame="1"] section[iteration="3"] .planet-4b, body[show-frame="1"] section[iteration="3"] .planet-5a,
+body[show-frame="1"] section[iteration="3"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="2"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="2"] section[iteration="3"] .flyaway, body[show-frame="2"] section[iteration="3"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="2"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="2"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="3"] .pad50-left p.copy, body[show-frame="2"] section[iteration="3"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="2"] section[iteration="3"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="2"] section[iteration="3"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="2"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="3"] .pad50-left p.copy, body[show-frame="2"] section[iteration="3"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="3"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="3"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="2"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="3"] .side-slide div, body[show-frame="2"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="3"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="3"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="2"] section[iteration="3"] .last-section .input-sub-message,
+body[show-frame="2"] section[iteration="3"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-2a, body[show-frame="2"] section[iteration="3"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-3b, body[show-frame="2"] section[iteration="3"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="3"] .planet-1, body[show-frame="2"] section[iteration="3"] .planet-2a,
+body[show-frame="2"] section[iteration="3"] .planet-2b, body[show-frame="2"] section[iteration="3"] .planet-3a,
+body[show-frame="2"] section[iteration="3"] .planet-3b, body[show-frame="2"] section[iteration="3"] .planet-4a,
+body[show-frame="2"] section[iteration="3"] .planet-4b, body[show-frame="2"] section[iteration="3"] .planet-5a,
+body[show-frame="2"] section[iteration="3"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="3"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible
+}
+
+body[show-frame="3"] section[iteration="3"] .flyaway, body[show-frame="3"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="3"] section[iteration="3"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="3"] section[iteration="3"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="3"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="3"] .side-slide div, body[show-frame="3"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="3"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="3"] section[iteration="3"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="3"] section[iteration="3"] .last-section .input-sub-message,
+body[show-frame="3"] section[iteration="3"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="3"] section[iteration="3"] .planet-1, body[show-frame="3"] section[iteration="3"] .planet-2a,
+body[show-frame="3"] section[iteration="3"] .planet-2b, body[show-frame="3"] section[iteration="3"] .planet-3a,
+body[show-frame="3"] section[iteration="3"] .planet-3b, body[show-frame="3"] section[iteration="3"] .planet-4a,
+body[show-frame="3"] section[iteration="3"] .planet-4b, body[show-frame="3"] section[iteration="3"] .planet-5a,
+body[show-frame="3"] section[iteration="3"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+body[show-frame="4"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="4"] section[iteration="3"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="4"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="4"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="3"] .pad50-left p.copy, body[show-frame="4"] section[iteration="3"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="4"] section[iteration="3"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="4"] section[iteration="3"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="4"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="3"] .pad50-left p.copy, body[show-frame="4"] section[iteration="3"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="3"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="3"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="4"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="3"] .side-slide div, body[show-frame="4"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="3"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-2a, body[show-frame="4"] section[iteration="3"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-3b, body[show-frame="4"] section[iteration="3"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="3"] .planet-1, body[show-frame="4"] section[iteration="3"] .planet-2a,
+body[show-frame="4"] section[iteration="3"] .planet-2b, body[show-frame="4"] section[iteration="3"] .planet-3a,
+body[show-frame="4"] section[iteration="3"] .planet-3b, body[show-frame="4"] section[iteration="3"] .planet-4a,
+body[show-frame="4"] section[iteration="3"] .planet-4b, body[show-frame="4"] section[iteration="3"] .planet-5a,
+body[show-frame="4"] section[iteration="3"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="5"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="5"] section[iteration="3"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="5"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="5"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="3"] .pad50-left p.copy, body[show-frame="5"] section[iteration="3"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="5"] section[iteration="3"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="5"] section[iteration="3"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="5"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="3"] .pad50-left p.copy, body[show-frame="5"] section[iteration="3"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="3"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="3"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="5"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="3"] .side-slide div, body[show-frame="5"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="3"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-2a, body[show-frame="5"] section[iteration="3"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-3b, body[show-frame="5"] section[iteration="3"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="3"] .planet-1, body[show-frame="5"] section[iteration="3"] .planet-2a,
+body[show-frame="5"] section[iteration="3"] .planet-2b, body[show-frame="5"] section[iteration="3"] .planet-3a,
+body[show-frame="5"] section[iteration="3"] .planet-3b, body[show-frame="5"] section[iteration="3"] .planet-4a,
+body[show-frame="5"] section[iteration="3"] .planet-4b, body[show-frame="5"] section[iteration="3"] .planet-5a,
+body[show-frame="5"] section[iteration="3"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="6"] section[iteration="3"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="6"] section[iteration="3"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="6"] section[iteration="3"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="6"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="3"] .pad50-left p.copy, body[show-frame="6"] section[iteration="3"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="6"] section[iteration="3"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="6"] section[iteration="3"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="6"] section[iteration="3"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="3"] .pad50-left p.copy, body[show-frame="6"] section[iteration="3"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="3"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="3"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="6"] section[iteration="3"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="3"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="3"] .side-slide div, body[show-frame="6"] section[iteration="3"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="3"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-2a, body[show-frame="6"] section[iteration="3"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-3b, body[show-frame="6"] section[iteration="3"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="3"] .planet-1, body[show-frame="6"] section[iteration="3"] .planet-2a,
+body[show-frame="6"] section[iteration="3"] .planet-2b, body[show-frame="6"] section[iteration="3"] .planet-3a,
+body[show-frame="6"] section[iteration="3"] .planet-3b, body[show-frame="6"] section[iteration="3"] .planet-4a,
+body[show-frame="6"] section[iteration="3"] .planet-4b, body[show-frame="6"] section[iteration="3"] .planet-5a,
+body[show-frame="6"] section[iteration="3"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="1"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="1"] section[iteration="4"] .flyaway, body[show-frame="1"] section[iteration="4"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="1"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="1"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="4"] .pad50-left p.copy, body[show-frame="1"] section[iteration="4"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="1"] section[iteration="4"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="1"] section[iteration="4"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="1"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="4"] .pad50-left p.copy, body[show-frame="1"] section[iteration="4"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="1"] section[iteration="4"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="4"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="1"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="4"] .side-slide div, body[show-frame="1"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="4"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="4"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="1"] section[iteration="4"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="4"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-2a, body[show-frame="1"] section[iteration="4"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-3b, body[show-frame="1"] section[iteration="4"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="4"] .planet-1, body[show-frame="1"] section[iteration="4"] .planet-2a,
+body[show-frame="1"] section[iteration="4"] .planet-2b, body[show-frame="1"] section[iteration="4"] .planet-3a,
+body[show-frame="1"] section[iteration="4"] .planet-3b, body[show-frame="1"] section[iteration="4"] .planet-4a,
+body[show-frame="1"] section[iteration="4"] .planet-4b, body[show-frame="1"] section[iteration="4"] .planet-5a,
+body[show-frame="1"] section[iteration="4"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="2"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="2"] section[iteration="4"] .flyaway, body[show-frame="2"] section[iteration="4"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="2"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="2"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="4"] .pad50-left p.copy, body[show-frame="2"] section[iteration="4"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="2"] section[iteration="4"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="2"] section[iteration="4"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="2"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="4"] .pad50-left p.copy, body[show-frame="2"] section[iteration="4"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="4"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="4"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="2"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="4"] .side-slide div, body[show-frame="2"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="4"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="4"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="2"] section[iteration="4"] .last-section .input-sub-message,
+body[show-frame="2"] section[iteration="4"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-2a, body[show-frame="2"] section[iteration="4"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-3b, body[show-frame="2"] section[iteration="4"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="4"] .planet-1, body[show-frame="2"] section[iteration="4"] .planet-2a,
+body[show-frame="2"] section[iteration="4"] .planet-2b, body[show-frame="2"] section[iteration="4"] .planet-3a,
+body[show-frame="2"] section[iteration="4"] .planet-3b, body[show-frame="2"] section[iteration="4"] .planet-4a,
+body[show-frame="2"] section[iteration="4"] .planet-4b, body[show-frame="2"] section[iteration="4"] .planet-5a,
+body[show-frame="2"] section[iteration="4"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="3"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="3"] section[iteration="4"] .flyaway, body[show-frame="3"] section[iteration="4"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="3"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="3"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="4"] .pad50-left p.copy, body[show-frame="3"] section[iteration="4"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="3"] section[iteration="4"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="3"] section[iteration="4"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="3"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="4"] .pad50-left p.copy, body[show-frame="3"] section[iteration="4"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="4"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="4"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="3"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="4"] .side-slide div, body[show-frame="3"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="4"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="4"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="3"] section[iteration="4"] .last-section .input-sub-message,
+body[show-frame="3"] section[iteration="4"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-2a, body[show-frame="3"] section[iteration="4"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-3b, body[show-frame="3"] section[iteration="4"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="4"] .planet-1, body[show-frame="3"] section[iteration="4"] .planet-2a,
+body[show-frame="3"] section[iteration="4"] .planet-2b, body[show-frame="3"] section[iteration="4"] .planet-3a,
+body[show-frame="3"] section[iteration="4"] .planet-3b, body[show-frame="3"] section[iteration="4"] .planet-4a,
+body[show-frame="3"] section[iteration="4"] .planet-4b, body[show-frame="3"] section[iteration="4"] .planet-5a,
+body[show-frame="3"] section[iteration="4"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="4"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible
+}
+
+body[show-frame="4"] section[iteration="4"] .flyaway, body[show-frame="4"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="4"] section[iteration="4"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="4"] section[iteration="4"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="4"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="4"] .side-slide div, body[show-frame="4"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="4"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="4"] section[iteration="4"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="4"] section[iteration="4"] .last-section .input-sub-message,
+body[show-frame="4"] section[iteration="4"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="4"] section[iteration="4"] .planet-1, body[show-frame="4"] section[iteration="4"] .planet-2a,
+body[show-frame="4"] section[iteration="4"] .planet-2b, body[show-frame="4"] section[iteration="4"] .planet-3a,
+body[show-frame="4"] section[iteration="4"] .planet-3b, body[show-frame="4"] section[iteration="4"] .planet-4a,
+body[show-frame="4"] section[iteration="4"] .planet-4b, body[show-frame="4"] section[iteration="4"] .planet-5a,
+body[show-frame="4"] section[iteration="4"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+body[show-frame="5"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="5"] section[iteration="4"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="5"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="5"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="4"] .pad50-left p.copy, body[show-frame="5"] section[iteration="4"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="5"] section[iteration="4"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="5"] section[iteration="4"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="5"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="4"] .pad50-left p.copy, body[show-frame="5"] section[iteration="4"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="4"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="4"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="5"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="4"] .side-slide div, body[show-frame="5"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="4"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-2a, body[show-frame="5"] section[iteration="4"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-3b, body[show-frame="5"] section[iteration="4"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="4"] .planet-1, body[show-frame="5"] section[iteration="4"] .planet-2a,
+body[show-frame="5"] section[iteration="4"] .planet-2b, body[show-frame="5"] section[iteration="4"] .planet-3a,
+body[show-frame="5"] section[iteration="4"] .planet-3b, body[show-frame="5"] section[iteration="4"] .planet-4a,
+body[show-frame="5"] section[iteration="4"] .planet-4b, body[show-frame="5"] section[iteration="4"] .planet-5a,
+body[show-frame="5"] section[iteration="4"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="6"] section[iteration="4"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="6"] section[iteration="4"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="6"] section[iteration="4"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="6"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="4"] .pad50-left p.copy, body[show-frame="6"] section[iteration="4"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="6"] section[iteration="4"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="6"] section[iteration="4"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="6"] section[iteration="4"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="4"] .pad50-left p.copy, body[show-frame="6"] section[iteration="4"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="4"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="4"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="6"] section[iteration="4"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="4"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="4"] .side-slide div, body[show-frame="6"] section[iteration="4"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="4"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-2a, body[show-frame="6"] section[iteration="4"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-3b, body[show-frame="6"] section[iteration="4"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="4"] .planet-1, body[show-frame="6"] section[iteration="4"] .planet-2a,
+body[show-frame="6"] section[iteration="4"] .planet-2b, body[show-frame="6"] section[iteration="4"] .planet-3a,
+body[show-frame="6"] section[iteration="4"] .planet-3b, body[show-frame="6"] section[iteration="4"] .planet-4a,
+body[show-frame="6"] section[iteration="4"] .planet-4b, body[show-frame="6"] section[iteration="4"] .planet-5a,
+body[show-frame="6"] section[iteration="4"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="1"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="1"] section[iteration="5"] .flyaway, body[show-frame="1"] section[iteration="5"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="1"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="1"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="5"] .pad50-left p.copy, body[show-frame="1"] section[iteration="5"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="1"] section[iteration="5"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="1"] section[iteration="5"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="1"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="5"] .pad50-left p.copy, body[show-frame="1"] section[iteration="5"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="1"] section[iteration="5"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="5"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="1"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="5"] .side-slide div, body[show-frame="1"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="5"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="5"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="1"] section[iteration="5"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="5"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-2a, body[show-frame="1"] section[iteration="5"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-3b, body[show-frame="1"] section[iteration="5"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="5"] .planet-1, body[show-frame="1"] section[iteration="5"] .planet-2a,
+body[show-frame="1"] section[iteration="5"] .planet-2b, body[show-frame="1"] section[iteration="5"] .planet-3a,
+body[show-frame="1"] section[iteration="5"] .planet-3b, body[show-frame="1"] section[iteration="5"] .planet-4a,
+body[show-frame="1"] section[iteration="5"] .planet-4b, body[show-frame="1"] section[iteration="5"] .planet-5a,
+body[show-frame="1"] section[iteration="5"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="2"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="2"] section[iteration="5"] .flyaway, body[show-frame="2"] section[iteration="5"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="2"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="2"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="5"] .pad50-left p.copy, body[show-frame="2"] section[iteration="5"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="2"] section[iteration="5"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="2"] section[iteration="5"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="2"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="5"] .pad50-left p.copy, body[show-frame="2"] section[iteration="5"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="5"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="5"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="2"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="5"] .side-slide div, body[show-frame="2"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="5"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="5"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="2"] section[iteration="5"] .last-section .input-sub-message,
+body[show-frame="2"] section[iteration="5"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-2a, body[show-frame="2"] section[iteration="5"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-3b, body[show-frame="2"] section[iteration="5"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="5"] .planet-1, body[show-frame="2"] section[iteration="5"] .planet-2a,
+body[show-frame="2"] section[iteration="5"] .planet-2b, body[show-frame="2"] section[iteration="5"] .planet-3a,
+body[show-frame="2"] section[iteration="5"] .planet-3b, body[show-frame="2"] section[iteration="5"] .planet-4a,
+body[show-frame="2"] section[iteration="5"] .planet-4b, body[show-frame="2"] section[iteration="5"] .planet-5a,
+body[show-frame="2"] section[iteration="5"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="3"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="3"] section[iteration="5"] .flyaway, body[show-frame="3"] section[iteration="5"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="3"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="3"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="5"] .pad50-left p.copy, body[show-frame="3"] section[iteration="5"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="3"] section[iteration="5"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="3"] section[iteration="5"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="3"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="5"] .pad50-left p.copy, body[show-frame="3"] section[iteration="5"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="5"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="5"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="3"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="5"] .side-slide div, body[show-frame="3"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="5"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="5"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="3"] section[iteration="5"] .last-section .input-sub-message,
+body[show-frame="3"] section[iteration="5"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-2a, body[show-frame="3"] section[iteration="5"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-3b, body[show-frame="3"] section[iteration="5"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="5"] .planet-1, body[show-frame="3"] section[iteration="5"] .planet-2a,
+body[show-frame="3"] section[iteration="5"] .planet-2b, body[show-frame="3"] section[iteration="5"] .planet-3a,
+body[show-frame="3"] section[iteration="5"] .planet-3b, body[show-frame="3"] section[iteration="5"] .planet-4a,
+body[show-frame="3"] section[iteration="5"] .planet-4b, body[show-frame="3"] section[iteration="5"] .planet-5a,
+body[show-frame="3"] section[iteration="5"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="4"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="4"] section[iteration="5"] .flyaway, body[show-frame="4"] section[iteration="5"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="4"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="4"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="5"] .pad50-left p.copy, body[show-frame="4"] section[iteration="5"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="4"] section[iteration="5"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="4"] section[iteration="5"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="4"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="5"] .pad50-left p.copy, body[show-frame="4"] section[iteration="5"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="5"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="5"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="4"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="5"] .side-slide div, body[show-frame="4"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="5"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="5"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="4"] section[iteration="5"] .last-section .input-sub-message,
+body[show-frame="4"] section[iteration="5"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-2a, body[show-frame="4"] section[iteration="5"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-3b, body[show-frame="4"] section[iteration="5"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="5"] .planet-1, body[show-frame="4"] section[iteration="5"] .planet-2a,
+body[show-frame="4"] section[iteration="5"] .planet-2b, body[show-frame="4"] section[iteration="5"] .planet-3a,
+body[show-frame="4"] section[iteration="5"] .planet-3b, body[show-frame="4"] section[iteration="5"] .planet-4a,
+body[show-frame="4"] section[iteration="5"] .planet-4b, body[show-frame="4"] section[iteration="5"] .planet-5a,
+body[show-frame="4"] section[iteration="5"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="5"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible
+}
+
+body[show-frame="5"] section[iteration="5"] .flyaway, body[show-frame="5"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="5"] section[iteration="5"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="5"] section[iteration="5"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="5"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="5"] .side-slide div, body[show-frame="5"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="5"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="5"] section[iteration="5"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="5"] section[iteration="5"] .last-section .input-sub-message,
+body[show-frame="5"] section[iteration="5"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="5"] section[iteration="5"] .planet-1, body[show-frame="5"] section[iteration="5"] .planet-2a,
+body[show-frame="5"] section[iteration="5"] .planet-2b, body[show-frame="5"] section[iteration="5"] .planet-3a,
+body[show-frame="5"] section[iteration="5"] .planet-3b, body[show-frame="5"] section[iteration="5"] .planet-4a,
+body[show-frame="5"] section[iteration="5"] .planet-4b, body[show-frame="5"] section[iteration="5"] .planet-5a,
+body[show-frame="5"] section[iteration="5"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+body[show-frame="6"] section[iteration="5"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="6"] section[iteration="5"] .flyaway {
+    transform: translateY(-75vh)
+}
+
+body[show-frame="6"] section[iteration="5"] .flyaway-double-travel {
+    transform: translateY(-150vh)
+}
+
+body[show-frame="6"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="5"] .pad50-left p.copy, body[show-frame="6"] section[iteration="5"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="6"] section[iteration="5"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="6"] section[iteration="5"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="6"] section[iteration="5"] .pad50-left .eyebrow,
+body[show-frame="6"] section[iteration="5"] .pad50-left p.copy, body[show-frame="6"] section[iteration="5"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="5"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="5"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="6"] section[iteration="5"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="5"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="5"] .side-slide div, body[show-frame="6"] section[iteration="5"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="5"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-2a, body[show-frame="6"] section[iteration="5"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-2b {
+    opacity: 0;
+    transform: translateX(-13px) translateY(50px) scale(.72) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-3a {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-23px) scale(.75) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-3b, body[show-frame="6"] section[iteration="5"] .planet-c {
+    opacity: 0;
+    transform: rotate(40deg)
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-4b {
+    opacity: 0;
+    transform: translateX(-44px) translateY(13px) scale(.68) rotate(-20deg)
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-5a {
+    opacity: 0
+}
+
+body[show-frame="6"] section[iteration="5"] .planet-1, body[show-frame="6"] section[iteration="5"] .planet-2a,
+body[show-frame="6"] section[iteration="5"] .planet-2b, body[show-frame="6"] section[iteration="5"] .planet-3a,
+body[show-frame="6"] section[iteration="5"] .planet-3b, body[show-frame="6"] section[iteration="5"] .planet-4a,
+body[show-frame="6"] section[iteration="5"] .planet-4b, body[show-frame="6"] section[iteration="5"] .planet-5a,
+body[show-frame="6"] section[iteration="5"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="1"] {
+    background-position-y: 0%
+}
+
+body[show-frame="1"] nav ul li:first-of-type {
+    opacity: 1
+}
+
+body[show-frame="1"] nav ul li:first-of-type:before {
+    background-color: #03feb2
+}
+
+body[show-frame="1"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    
+}
+
+body[show-frame="1"] section[iteration="6"] .flyaway, body[show-frame="1"] section[iteration="6"] .semi-fly {
+    transform: translateY(75vh)
+    
+}
+
+body[show-frame="1"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="1"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="6"] .pad50-left p.copy, body[show-frame="1"] section[iteration="6"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="1"] section[iteration="6"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="1"] section[iteration="6"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="1"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="1"] section[iteration="6"] .pad50-left p.copy, body[show-frame="1"] section[iteration="6"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="1"] section[iteration="6"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="6"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="1"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="1"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="1"] section[iteration="6"] .side-slide div, body[show-frame="1"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="1"] section[iteration="6"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="1"] section[iteration="6"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="1"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="1"] section[iteration="6"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-2a, body[show-frame="1"] section[iteration="6"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-3b, body[show-frame="1"] section[iteration="6"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="1"] section[iteration="6"] .planet-1, body[show-frame="1"] section[iteration="6"] .planet-2a,
+body[show-frame="1"] section[iteration="6"] .planet-2b, body[show-frame="1"] section[iteration="6"] .planet-3a,
+body[show-frame="1"] section[iteration="6"] .planet-3b, body[show-frame="1"] section[iteration="6"] .planet-4a,
+body[show-frame="1"] section[iteration="6"] .planet-4b, body[show-frame="1"] section[iteration="6"] .planet-5a,
+body[show-frame="1"] section[iteration="6"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="2"] {
+    background-position-y: 8.33333%
+}
+
+body[show-frame="2"] nav ul li:nth-of-type(2) {
+    opacity: 1
+}
+
+body[show-frame="2"] nav ul li:nth-of-type(2):before {
+    background-color: #03feb2
+}
+
+body[show-frame="2"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="2"] section[iteration="6"] .flyaway, body[show-frame="2"] section[iteration="6"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="2"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="2"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="6"] .pad50-left p.copy, body[show-frame="2"] section[iteration="6"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="2"] section[iteration="6"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="2"] section[iteration="6"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="2"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="2"] section[iteration="6"] .pad50-left p.copy, body[show-frame="2"] section[iteration="6"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="2"] section[iteration="6"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="6"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="2"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="2"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="2"] section[iteration="6"] .side-slide div, body[show-frame="2"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="2"] section[iteration="6"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="2"] section[iteration="6"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="2"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="2"] section[iteration="6"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-2a, body[show-frame="2"] section[iteration="6"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-3b, body[show-frame="2"] section[iteration="6"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="2"] section[iteration="6"] .planet-1, body[show-frame="2"] section[iteration="6"] .planet-2a,
+body[show-frame="2"] section[iteration="6"] .planet-2b, body[show-frame="2"] section[iteration="6"] .planet-3a,
+body[show-frame="2"] section[iteration="6"] .planet-3b, body[show-frame="2"] section[iteration="6"] .planet-4a,
+body[show-frame="2"] section[iteration="6"] .planet-4b, body[show-frame="2"] section[iteration="6"] .planet-5a,
+body[show-frame="2"] section[iteration="6"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="3"] {
+    background-position-y: 16.66667%
+}
+
+body[show-frame="3"] nav ul li:nth-of-type(3) {
+    opacity: 1
+}
+
+body[show-frame="3"] nav ul li:nth-of-type(3):before {
+    background-color: #03feb2
+}
+
+body[show-frame="3"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="3"] section[iteration="6"] .flyaway, body[show-frame="3"] section[iteration="6"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="3"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="3"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="6"] .pad50-left p.copy, body[show-frame="3"] section[iteration="6"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="3"] section[iteration="6"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="3"] section[iteration="6"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="3"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="3"] section[iteration="6"] .pad50-left p.copy, body[show-frame="3"] section[iteration="6"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="3"] section[iteration="6"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="6"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="3"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="3"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="3"] section[iteration="6"] .side-slide div, body[show-frame="3"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="3"] section[iteration="6"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="3"] section[iteration="6"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="3"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="3"] section[iteration="6"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-2a, body[show-frame="3"] section[iteration="6"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-3b, body[show-frame="3"] section[iteration="6"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="3"] section[iteration="6"] .planet-1, body[show-frame="3"] section[iteration="6"] .planet-2a,
+body[show-frame="3"] section[iteration="6"] .planet-2b, body[show-frame="3"] section[iteration="6"] .planet-3a,
+body[show-frame="3"] section[iteration="6"] .planet-3b, body[show-frame="3"] section[iteration="6"] .planet-4a,
+body[show-frame="3"] section[iteration="6"] .planet-4b, body[show-frame="3"] section[iteration="6"] .planet-5a,
+body[show-frame="3"] section[iteration="6"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="4"] {
+    background-position-y: 25%
+}
+
+body[show-frame="4"] nav ul li:nth-of-type(4) {
+    opacity: 1
+}
+
+body[show-frame="4"] nav ul li:nth-of-type(4):before {
+    background-color: #03feb2
+}
+
+body[show-frame="4"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="4"] section[iteration="6"] .flyaway, body[show-frame="4"] section[iteration="6"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="4"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="4"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="6"] .pad50-left p.copy, body[show-frame="4"] section[iteration="6"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="4"] section[iteration="6"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="4"] section[iteration="6"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="4"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="4"] section[iteration="6"] .pad50-left p.copy, body[show-frame="4"] section[iteration="6"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="4"] section[iteration="6"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="6"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="4"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="4"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="4"] section[iteration="6"] .side-slide div, body[show-frame="4"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="4"] section[iteration="6"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="4"] section[iteration="6"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="4"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="4"] section[iteration="6"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-2a, body[show-frame="4"] section[iteration="6"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-3b, body[show-frame="4"] section[iteration="6"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="4"] section[iteration="6"] .planet-1, body[show-frame="4"] section[iteration="6"] .planet-2a,
+body[show-frame="4"] section[iteration="6"] .planet-2b, body[show-frame="4"] section[iteration="6"] .planet-3a,
+body[show-frame="4"] section[iteration="6"] .planet-3b, body[show-frame="4"] section[iteration="6"] .planet-4a,
+body[show-frame="4"] section[iteration="6"] .planet-4b, body[show-frame="4"] section[iteration="6"] .planet-5a,
+body[show-frame="4"] section[iteration="6"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="5"] {
+    background-position-y: 33.33333%
+}
+
+body[show-frame="5"] nav ul li:nth-of-type(5) {
+    opacity: 1
+}
+
+body[show-frame="5"] nav ul li:nth-of-type(5):before {
+    background-color: #03feb2
+}
+
+body[show-frame="5"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden
+}
+
+body[show-frame="5"] section[iteration="6"] .flyaway, body[show-frame="5"] section[iteration="6"] .semi-fly {
+    transform: translateY(75vh)
+}
+
+body[show-frame="5"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(150vh)
+}
+
+body[show-frame="5"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="6"] .pad50-left p.copy, body[show-frame="5"] section[iteration="6"] .pad50-left ul {
+    transition-delay: 0s
+}
+
+body[show-frame="5"] section[iteration="6"] .higher-matrix-text {
+    transform: rotate(270deg) translateX(80px)
+}
+
+body[show-frame="5"] section[iteration="6"] .lower-matrix-text {
+    transform: rotate(270deg) translateX(-80px)
+}
+
+body[show-frame="5"] section[iteration="6"] .pad50-left .eyebrow,
+body[show-frame="5"] section[iteration="6"] .pad50-left p.copy, body[show-frame="5"] section[iteration="6"] .pad50-left ul {
+    transform: translateX(-40px);
+    opacity: 0
+}
+
+body[show-frame="5"] section[iteration="6"] .eyebrow:before {
+    width: 0;
+    transition: width 1ms;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="6"] .side-slide {
+    transform: translateX(-700px);
+    margin-left: -40px;
+    transition: transform 2s 1s, margin 1s 0s
+}
+
+body[show-frame="5"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="5"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="5"] section[iteration="6"] .side-slide div, body[show-frame="5"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="5"] section[iteration="6"] .side-slide ul {
+    transform: translateX(700px);
+    transition: transform 2s;
+    transition-delay: 1s
+}
+
+body[show-frame="5"] section[iteration="6"] .last-section .focus-text {
+    opacity: 0;
+    transform: translateY(-20px)
+}
+
+body[show-frame="5"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="5"] section[iteration="6"] .last-section .signup {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-2a, body[show-frame="5"] section[iteration="6"] .planet-2b {
+    transition: 1s
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-2b {
+    opacity: 0;
+    transform: translateX(81px) translateY(275px) scale(.78) rotate(20deg)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-3a {
+    opacity: 0;
+    transform: translateX(73px) translateY(173px) scale(.74) rotate(20deg)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-3b, body[show-frame="5"] section[iteration="6"] .planet-c {
+    opacity: 0;
+    transform: rotate(-40deg)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-4b {
+    opacity: 0;
+    transform: translateX(55px) translateY(288px) scale(.68) rotate(20deg)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-5a {
+    opacity: 0;
+    transform: translateX(304px) translateY(232px) scale(.7) rotate(20deg)
+}
+
+body[show-frame="5"] section[iteration="6"] .planet-1, body[show-frame="5"] section[iteration="6"] .planet-2a,
+body[show-frame="5"] section[iteration="6"] .planet-2b, body[show-frame="5"] section[iteration="6"] .planet-3a,
+body[show-frame="5"] section[iteration="6"] .planet-3b, body[show-frame="5"] section[iteration="6"] .planet-4a,
+body[show-frame="5"] section[iteration="6"] .planet-4b, body[show-frame="5"] section[iteration="6"] .planet-5a,
+body[show-frame="5"] section[iteration="6"] .planet-d {
+    transition: transform 1s 0s, opacity 1s 0s
+}
+
+body[show-frame="6"] {
+    background-position-y: 41.66667%
+}
+
+body[show-frame="6"] nav ul li:nth-of-type(6) {
+    opacity: 1
+}
+
+body[show-frame="6"] nav ul li:nth-of-type(6):before {
+    background-color: #fe036a
+}
+
+body[show-frame="6"] section[iteration="6"] {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible
+}
+
+body[show-frame="6"] section[iteration="6"] .flyaway, body[show-frame="6"] section[iteration="6"] .flyaway-double-travel {
+    transform: translateY(0);
+    transition-delay: .75s
+}
+
+body[show-frame="6"] section[iteration="6"] .eyebrow:before {
+    transition: width 2s .5s
+}
+
+body[show-frame="6"] section[iteration="6"] .side-slide {
+    transition: transform 3s, margin 1s
+}
+
+body[show-frame="6"] section[iteration="6"] .side-slide .eyebrow,
+body[show-frame="6"] section[iteration="6"] .side-slide .focus-text,
+body[show-frame="6"] section[iteration="6"] .side-slide div, body[show-frame="6"] section[iteration="6"] .side-slide p.copy,
+body[show-frame="6"] section[iteration="6"] .side-slide ul {
+    transform: none;
+    transition: transform 3s
+}
+
+body[show-frame="6"] section[iteration="6"] .last-section .focus-text {
+    transition: opacity 1s 1.25s, transform 1s .75s
+}
+
+body[show-frame="6"] section[iteration="6"] .last-section .input-sub-message,
+body[show-frame="6"] section[iteration="6"] .last-section .signup {
+    transition: opacity 1s 1.25s, transform 1s 1.25s
+}
+
+body[show-frame="6"] section[iteration="6"] .planet-1, body[show-frame="6"] section[iteration="6"] .planet-2a,
+body[show-frame="6"] section[iteration="6"] .planet-2b, body[show-frame="6"] section[iteration="6"] .planet-3a,
+body[show-frame="6"] section[iteration="6"] .planet-3b, body[show-frame="6"] section[iteration="6"] .planet-4a,
+body[show-frame="6"] section[iteration="6"] .planet-4b, body[show-frame="6"] section[iteration="6"] .planet-5a,
+body[show-frame="6"] section[iteration="6"] .planet-d {
+    transition: transform 1s .5s, opacity 1s .5s
+}
+
+
