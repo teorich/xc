@@ -123,7 +123,7 @@ nav ul li.do-animation:before {
 
 body {
     color: #fff;
-    background-image: url("assets/img/fk1.png");
+    background-image: url("../img/fk1.png");
     background-position: 100% 0;
     background-repeat: space;
     -webkit-font-smoothing: antialiased
@@ -131,7 +131,7 @@ body {
 
 @media (max-width:767px) {
     body {
-        background-image: url("assets/img/fk1.png")
+        background-image: url("../img/fk1.png")
     }
 }
 
