@@ -35,7 +35,7 @@ $(document).ready(function() {
         $(".android.phone-sms a.download").trigger("click"), 6 != $("body").attr("show-frame") && (e.preventDefault(), $("body").attr("show-frame", 6))
     }), $("body").bind("wheel", function(e) {
         var o = scrollStatus;
-        // e.preventDefault();
+         e.preventDefault();
         var t = {};
         t.delta = e.originalEvent.deltaY, t.max = $("#body-wrap > section").length, t.currentSlide = parseInt($("body").attr("show-frame")), (t.stat = o) && t.delta < 0 && 1 < t.currentSlide ? ($("body").attr("show-frame", t.currentSlide - 1), window.scrollStatus = !1, scrollLockingPause(), a()) : o && 0 < t.delta && t.currentSlide < t.max && ($("body").attr("show-frame", t.currentSlide + 1), window.scrollStatus = !1,scrollLockingPause(),  a())
     }), 
