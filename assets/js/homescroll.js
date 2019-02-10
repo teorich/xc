@@ -1,5 +1,4 @@
 scrollStatus = !0;
-
 var scrollIndicatorDelay, event = {},
     mobileAndTabletcheck = function() {
         var e, o = !1;
@@ -15,17 +14,16 @@ $(".scroll-guide").removeClass("hidden"), $("body").on("click", ".scroll-guide",
     e.preventDefault();
     var o = $("body").attr("show-frame");
     console.log(o), $("body").attr("show-frame", parseInt(o) + 1)
-}), mobileAndTabletcheck() || $("body").append('<link rel="stylesheet" type="text/css" href="home-anim.css' );
+}), mobileAndTabletcheck() || $("body").append('<link rel="stylesheet" type="text/css" href="/assets/styles/home-animation.min.css?' + Date.now() + '">');
 var scrollLockingPause = function() {
         $(".scroll-guide").addClass("hidden"), clearTimeout(scrollIndicatorDelay), setTimeout(function() {
-            scrollStatus = !0;
+            scrollStatus = !0
         }, 1750), scrollGuideHandler()
     },
     checkIos = function() {
         var e, o = !1;
         return e = navigator.userAgent || navigator.vendor || window.opera, /iPad|iPhone|iPod/i.test(e) && (o = !0), o
     };
-    
 $(document).ready(function() {
     $("body").on("click", "nav li", function() {
         $("body").attr("show-frame", $(this).index() + 1)
@@ -35,13 +33,10 @@ $(document).ready(function() {
         $(".android.phone-sms a.download").trigger("click"), 6 != $("body").attr("show-frame") && (e.preventDefault(), $("body").attr("show-frame", 6))
     }), $("body").bind("wheel", function(e) {
         var o = scrollStatus;
-        // e.preventDefault();
+        e.preventDefault();
         var t = {};
-        t.delta = e.originalEvent.deltaY, t.max = $("#body-wrap > section").length, t.currentSlide = parseInt($("body").attr("show-frame")), (t.stat = o) && t.delta < 0 && 1 < t.currentSlide ? ($("body").attr("show-frame", t.currentSlide - 1), window.scrollStatus = !1, scrollLockingPause(), a()) : o && 0 < t.delta && t.currentSlide < t.max && ($("body").attr("show-frame", t.currentSlide + 1), window.scrollStatus = !1,scrollLockingPause(),  a())
-    }), 
-    // scrollLockingPause()
-
-    $(document).keydown(function(e) {
+        t.delta = e.originalEvent.deltaY, t.max = $("#body-wrap > section").length, t.currentSlide = parseInt($("body").attr("show-frame")), (t.stat = o) && t.delta < 0 && 1 < t.currentSlide ? ($("body").attr("show-frame", t.currentSlide - 1), window.scrollStatus = !1, scrollLockingPause(), a()) : o && 0 < t.delta && t.currentSlide < t.max && ($("body").attr("show-frame", t.currentSlide + 1), window.scrollStatus = !1, scrollLockingPause(), a())
+    }), $(document).keydown(function(e) {
         if (!$(e.target).is(":input, [contenteditable]")) {
             var o = parseInt($("body").attr("show-frame")),
                 t = $("#body-wrap > section").length;
@@ -56,5 +51,5 @@ $(document).ready(function() {
             $("nav ul li").eq(e).removeClass("do-animation")
         }, 500)
     };
-   checkIos() ? $(".last-section").toggle() : $(".newsletter-signup").remove() 
+    checkIos() ? $(".last-section").toggle() : $(".newsletter-signup").remove()
 });
