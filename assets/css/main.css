@@ -819,7 +819,9 @@ section .content-container {
         width: 100%;
         max-width: 100%;
         -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap
+        flex-flow: column nowrap;
+        max-height: 150px;
+    overflow-y: scroll;
     }
 }
 
