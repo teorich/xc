@@ -56,5 +56,5 @@ $(document).ready(function() {
             $("nav ul li").eq(e).removeClass("do-animation")
         }, 500)
     };
-    
+   checkIos() ? $(".last-section").toggle() : $(".newsletter-signup").remove() 
 });
